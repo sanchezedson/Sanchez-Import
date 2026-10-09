@@ -1,0 +1,6 @@
+{
+  "name": "Maison d'Or Parfums | Alta Perfumaria Importada",
+  "description": "Boutique exclusiva de perfumes importados 100% originais. Encontre sua assinatura olfativa com checkout transparente, busca por notas olfativas e consultoria especializada.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
