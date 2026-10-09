@@ -112,14 +112,18 @@ export const LiveChat: React.FC = () => {
           {/* Header */}
           <div className="p-3.5 bg-[#171720] border-b border-stone-800 flex items-center justify-between">
             <div className="flex items-center gap-2.5">
-              <div className="relative">
+              <div className="relative w-8 h-8 rounded-full overflow-hidden bg-[#262015] border border-[#d4af37] flex items-center justify-center shrink-0">
                 <img
                   src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=80&q=80"
                   alt="Mirella Soares"
-                  className="w-8 h-8 rounded-full object-cover border border-[#d4af37]"
+                  className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                  }}
                 />
-                <span className="absolute bottom-0 right-0 w-2 h-2 bg-emerald-500 rounded-full ring-1 ring-black" />
+                <span className="text-[#d4af37] text-xs font-bold">M</span>
+                <span className="absolute bottom-0 right-0 w-2 h-2 bg-emerald-500 rounded-full ring-1 ring-black z-10" />
               </div>
               <div>
                 <h4 className="text-xs font-semibold text-white flex items-center gap-1">

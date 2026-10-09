@@ -1,10 +1,16 @@
 import { PerfumeProduct, Review, BlogPost, Coupon } from '../types';
 
-export const HERO_IMAGE = '/src/assets/images/hero_luxury_perfumes_1791503408077.jpg';
-export const AMBER_IMAGE = '/src/assets/images/perfume_amber_gold_1791503418156.jpg';
-export const NOIR_IMAGE = '/src/assets/images/perfume_noir_elixir_1791503427539.jpg';
-export const ROSE_OUD_IMAGE = '/src/assets/images/perfume_rose_oud_1791503436503.jpg';
-export const ORGAN_IMAGE = '/src/assets/images/perfumery_notes_organ_1791503444894.jpg';
+import heroImg from '../assets/images/hero_luxury_perfumes_1791503408077.jpg';
+import amberImg from '../assets/images/perfume_amber_gold_1791503418156.jpg';
+import noirImg from '../assets/images/perfume_noir_elixir_1791503427539.jpg';
+import roseOudImg from '../assets/images/perfume_rose_oud_1791503436503.jpg';
+import organImg from '../assets/images/perfumery_notes_organ_1791503444894.jpg';
+
+export const HERO_IMAGE = heroImg;
+export const AMBER_IMAGE = amberImg;
+export const NOIR_IMAGE = noirImg;
+export const ROSE_OUD_IMAGE = roseOudImg;
+export const ORGAN_IMAGE = organImg;
 
 export const PRODUCTS: PerfumeProduct[] = [
   {

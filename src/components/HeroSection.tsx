@@ -60,24 +60,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Social proof counter adjacent to CTA */}
             <div className="pt-3 flex items-center gap-4 text-xs text-stone-400">
               <div className="flex -space-x-2 overflow-hidden">
-                <img
-                  className="inline-block h-8 w-8 rounded-full ring-2 ring-[#0c0c0e]"
-                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80"
-                  alt="Cliente"
-                  referrerPolicy="no-referrer"
-                />
-                <img
-                  className="inline-block h-8 w-8 rounded-full ring-2 ring-[#0c0c0e]"
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80"
-                  alt="Cliente"
-                  referrerPolicy="no-referrer"
-                />
-                <img
-                  className="inline-block h-8 w-8 rounded-full ring-2 ring-[#0c0c0e]"
-                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=80&q=80"
-                  alt="Cliente"
-                  referrerPolicy="no-referrer"
-                />
+                <span className="inline-flex h-8 w-8 rounded-full ring-2 ring-[#0c0c0e] bg-[#241e15] border border-[#d4af37]/40 items-center justify-center text-[10px] font-bold text-[#d4af37]">
+                  R
+                </span>
+                <span className="inline-flex h-8 w-8 rounded-full ring-2 ring-[#0c0c0e] bg-[#1a1c24] border border-stone-600 items-center justify-center text-[10px] font-bold text-stone-200">
+                  C
+                </span>
+                <span className="inline-flex h-8 w-8 rounded-full ring-2 ring-[#0c0c0e] bg-[#221c1f] border border-[#d4af37]/40 items-center justify-center text-[10px] font-bold text-[#d4af37]">
+                  M
+                </span>
               </div>
               <div>
                 <p className="text-stone-200 font-medium">

@@ -79,12 +79,20 @@ export const TestimonialsSection: React.FC = () => {
               {/* Author Footer */}
               <div className="pt-3 border-t border-stone-800/80 flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <img
-                    src={review.avatar}
-                    alt={review.author}
-                    className="w-9 h-9 rounded-full object-cover border border-stone-700"
-                    referrerPolicy="no-referrer"
-                  />
+                  <div className="w-9 h-9 rounded-full overflow-hidden bg-[#241e15] border border-[#d4af37]/40 flex items-center justify-center shrink-0">
+                    <img
+                      src={review.avatar}
+                      alt={review.author}
+                      className="w-full h-full object-cover"
+                      referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                      }}
+                    />
+                    <span className="text-[#d4af37] font-semibold text-xs">
+                      {review.author.charAt(0)}
+                    </span>
+                  </div>
                   <div>
                     <h5 className="text-xs font-semibold text-white flex items-center gap-1.5">
                       <span>{review.author}</span>
